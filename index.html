@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Spill</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c15a12c0da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        
+        <div class="container">
+            <h1>BILL SPILL</h1>
+            <div class="wrapper">
+                <div class="left">
+                    <div class="left_content">
+                        <label for="bill">Bill</label>
+                        <div class="bill_div">
+                            <span class="bill_logo"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                            <input type="text" class="bill_input" placeholder="0" value="0" pattern="[0-9]+">
+                        </div>
+                    </div>
+                    <div class="left_content">
+                        <label for="tip">Select Tip %</label>
+                        <div class="tip_div">
+                            <div class="tip" value="5">5%</div>
+                            <div class="tip" value="10">10%</div>
+                            <div class="tip" value="15">15%</div>
+                            <div class="tip" value="25">25%</div>
+                            <div class="tip" value="50">50%</div>
+                            <div class="tip" value="75">75%</div>
+                        </div>
+                    </div>
+                    <div class="left_content">
+                        <label for="people">Number of People</label>
+                        <div class="people">
+                            <i class="fa-solid fa-user"></i>
+                            <button id="add" class="counter_btn">+</button>
+                            <span>1</span>
+                            <button id="subtract" class="counter_btn">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right_box">
+                        <div>
+                            <h2 class="right_text">Tip Amount</h2>
+                            <p>/person</p>
+                        </div>
+                        
+                        <h3 id="perPersonTip" class="amount">$0.00</h3>
+                    </div class="right_total">
+                    <div class="right_box">
+                        <div>
+                            <h2 class="right_text">Tip Amount</h2>
+                            <p>/person</p>
+                        </div>
+                        <h3 id="perPersonTotal" class="amount">$0.00</h3>
+                    </div>
+                    <div id="btn">
+                        <button id="generate" class="btn">Generate</button>
+                        <button id="reset" class="btn">reset</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+
+    <script src="app.js"></script>
+</body>
+</html>
